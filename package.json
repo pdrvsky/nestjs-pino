@@ -7,7 +7,8 @@
     "test": "jest --verbose",
     "build": "rm -rf ./dist && tsc --p tsconfig.build.json",
     "report": "cat ./coverage/lcov.info | coveralls",
-    "example": "rm -rf ./dist && tsc && LOG_LEVEL=debug node dist/example/main"
+    "example": "rm -rf ./dist && tsc && LOG_LEVEL=debug node dist/example/main",
+    "prepare": "npm run build"
   },
   "engineStrict": false,
   "engines": {
